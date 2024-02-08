@@ -1,0 +1,70 @@
+/*----------------------------------
+            RESET
+----------------------------------*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----------------------------------
+            DEBUG
+----------------------------------*/
+
+{
+    border: 1px dashed black;
+}
+/*----------------------------------
+            GENERAL
+----------------------------------*/
+body
+{
+    font-family: "Open Sans", sans-serif;
+}
+button
+{
+    padding: 8px 14px;
+    border-style: none;
+}
+.button-blue
+{
+    background-color: #0061ff;
+    color: white;
+    
+}
+h5
+{
+    font-weight: 400;
+}
+/*----------------------------------
+            HEADER
+----------------------------------*/
+header
+{
+    height: 80px;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+.container-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: inherit;
+}
+.left-container , .right-container
+{
+    display: flex;
+    align-items: center;
+    border: 1px dashed black;
+    height: inherit;
+}
+.left-container > div
+{
+    padding: 15px;
+}
+.right-container > div 
+{
+    padding: 15px;
+}
