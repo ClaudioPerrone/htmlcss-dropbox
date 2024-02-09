@@ -38,64 +38,56 @@ h5
 }
 img
 {
-    max-height: 100%;
+    max-width: 100%;
 }
 /*----------------------------------
             HEADER
 ----------------------------------*/
 header
 {
-    min-height: 80px;
     background-color: white;
-    border-bottom: 1px solid black;
-    /*position: sticky;
-    top: 0;*/   
+    position: sticky;
+    top: 0;
+    z-index: 1;  
 }
 .container-header
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    height: inherit;
 }
 .left-container , .right-container
 {
     display: flex;
     align-items: center;
-    height: inherit;
 }
 .left-container > div
 {
-    padding: 15px;
+    padding: 10px;
 }
 .right-container > div 
 {
-    padding: 15px;
+    padding: 10px;
 }
 /*----------------------------------
                 HERO
 ----------------------------------*/
 .container-hero
 {
-    height: 740px;
     background-color: #b4d0e7;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding-top: 60px;
 }
 .hero
 {
-    max-width: 1200px;
-    height: 740px;
-}
-.title
-{
-    padding-top: 70px;
+    width: 860px;
 }
 .title > h1
 {
     font-weight: 900;
-    font-size: 70px;
+    font-size: 55px;
 }
 /*----------------------------------
             TEXT-PIC
@@ -103,24 +95,21 @@ header
 .text-pic
 {
     display: flex;
-    height: calc(100% - 260px);
     transform: translateY(70px);
 }
 .hero-text
 {
-    height: 480px;
     width: 40%;
 }
 .finalmente
 {
-    font-size: 18x;
-}
-.hero-pic
-{
-    height: 480px;
-    width: 60%;
+    font-size: 14x;
 }
 .button-text , .annulla
 {
-    margin: 30px 0;
+
+}
+.hero-pic
+{
+    width: 60%;
 }
