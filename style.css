@@ -30,20 +30,26 @@ button
 {
     background-color: #0061ff;
     color: white;
-    
+    cursor: pointer;
 }
 h5
 {
     font-weight: 400;
+}
+img
+{
+    max-height: 100%;
 }
 /*----------------------------------
             HEADER
 ----------------------------------*/
 header
 {
-    height: 80px;
+    min-height: 80px;
     background-color: white;
     border-bottom: 1px solid black;
+    /*position: sticky;
+    top: 0;*/   
 }
 .container-header
 {
@@ -57,7 +63,6 @@ header
 {
     display: flex;
     align-items: center;
-    border: 1px dashed black;
     height: inherit;
 }
 .left-container > div
@@ -67,4 +72,55 @@ header
 .right-container > div 
 {
     padding: 15px;
+}
+/*----------------------------------
+                HERO
+----------------------------------*/
+.container-hero
+{
+    height: 740px;
+    background-color: #b4d0e7;
+    display: flex;
+    justify-content: center;
+}
+.hero
+{
+    max-width: 1200px;
+    height: 740px;
+}
+.title
+{
+    padding-top: 70px;
+}
+.title > h1
+{
+    font-weight: 900;
+    font-size: 70px;
+}
+/*----------------------------------
+            TEXT-PIC
+----------------------------------*/
+.text-pic
+{
+    display: flex;
+    height: calc(100% - 260px);
+    transform: translateY(70px);
+}
+.hero-text
+{
+    height: 480px;
+    width: 40%;
+}
+.finalmente
+{
+    font-size: 18x;
+}
+.hero-pic
+{
+    height: 480px;
+    width: 60%;
+}
+.button-text , .annulla
+{
+    margin: 30px 0;
 }
