@@ -21,9 +21,18 @@ body
 {
     font-family: "Open Sans", sans-serif;
 }
+.big-container
+{
+    max-width: 1200px;
+    margin: auto;
+}
+.small-container
+{
+    max-width: 1000;
+    margin: auto;
+}
 button
 {
-    padding: 8px 14px;
     border-style: none;
 }
 .button-blue
@@ -31,10 +40,18 @@ button
     background-color: #0061ff;
     color: white;
     cursor: pointer;
+    padding: 5px 10px;
+}
+.button-white
+{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 5px 10px;
 }
 h5
 {
-    font-weight: 400;
+    font-weight: 500;
 }
 img
 {
@@ -54,20 +71,25 @@ header
 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 20px 0;
+}
+.logo
+{
+    display: flex;
 }
 .left-container , .right-container
 {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    height: inherit;
+    gap: 40px;
+    margin: 0 15px;
 }
-.left-container > div
+.right-container > button
 {
-    padding: 10px;
-}
-.right-container > div 
-{
-    padding: 10px;
+    font-size: 18px;
+    margin-left: -25px;
 }
 /*----------------------------------
                 HERO
@@ -75,19 +97,12 @@ header
 .container-hero
 {
     background-color: #b4d0e7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 60px;
-}
-.hero
-{
-    width: 860px;
+    padding-top: 100px;
 }
 .title > h1
 {
     font-weight: 900;
-    font-size: 55px;
+    font-size: 77px;
 }
 /*----------------------------------
             TEXT-PIC
@@ -95,21 +110,27 @@ header
 .text-pic
 {
     display: flex;
-    transform: translateY(70px);
+    transform: translateY(80px);
 }
 .hero-text
 {
-    width: 40%;
+    max-width: 30%;
 }
-.finalmente
+.button-text
 {
-    font-size: 14x;
+    font-size: 17px;
+    padding: 15px 15px;
 }
-.button-text , .annulla
+.button-text, .annulla
 {
-
+    margin-top: 30px;
 }
 .hero-pic
 {
-    width: 60%;
+    max-width: 70%;
+}
+.arrow-down
+{
+    font-size: 40px;
+    margin-top: 85px;
 }
