@@ -8,19 +8,36 @@
     box-sizing: border-box;
 }
 /*----------------------------------
-            DEBUG
-----------------------------------*/
 
-{
-    border: 1px dashed black;
-}
-/*----------------------------------
             GENERAL
+
 ----------------------------------*/
 body
 {
     font-family: "Open Sans", sans-serif;
+    background-color: white;
 }
+/*----------------------------------
+            FONTAWESOME
+----------------------------------*/
+[class^="fa-solid fa-"]
+{
+    padding: 0 5px;
+}
+/*----------------------------------
+            FONTS
+----------------------------------*/
+h5
+{
+    font-weight: 500;
+}
+h3
+{
+    font-size: 14px;
+}
+/*----------------------------------
+            CONTAINERS
+----------------------------------*/
 .big-container
 {
     max-width: 1200px;
@@ -28,8 +45,15 @@ body
 }
 .small-container
 {
-    max-width: 1000;
+    max-width: 1000px;
     margin: auto;
+}
+/*----------------------------------
+            BUTTON
+----------------------------------*/
+button:not([class="inizia"])
+{
+    padding: 13px 35px;
 }
 button
 {
@@ -49,23 +73,64 @@ button
     cursor: pointer;
     padding: 5px 10px;
 }
-h5
-{
-    font-weight: 500;
-}
+/*----------------------------------
+            IMAGES
+----------------------------------*/
 img
 {
     max-width: 100%;
 }
 /*----------------------------------
+        UNORDERED-LIST
+----------------------------------*/
+ul
+{
+    list-style-type: none;
+    margin-left: 20px;
+}
+li:before
+{
+    font-family: "FontAwesome";
+    margin: 0 5px 0 -20px;
+}
+[class="check"]:before
+{    
+    content: "\f00c";
+    color: blue;
+}
+[class="user"]:before
+{    
+    content: "\f007";
+}
+[class="users"]:before
+{    
+    content: "\f0c0";
+}
+[class="folder"]:before
+{    
+    content: "\f07b";
+}
+[class="share"]:before
+{    
+    content: "\f1e0";
+}
+li
+{
+    margin: 20px 0;
+    font-size: 14px;
+}
+/*----------------------------------
+
             HEADER
+
 ----------------------------------*/
 header
 {
     background-color: white;
     position: sticky;
     top: 0;
-    z-index: 1;  
+    z-index: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3) ; 
 }
 .container-header
 {
@@ -86,20 +151,23 @@ header
     gap: 40px;
     margin: 0 15px;
 }
-.right-container > button
+.right-container button
 {
     font-size: 18px;
     margin-left: -25px;
+    padding: 5px 12px;
 }
 /*----------------------------------
+
                 HERO
+
 ----------------------------------*/
 .container-hero
 {
     background-color: #b4d0e7;
     padding-top: 100px;
 }
-.title > h1
+.title h1
 {
     font-weight: 900;
     font-size: 77px;
@@ -133,4 +201,119 @@ header
 {
     font-size: 40px;
     margin-top: 85px;
+}
+/*----------------------------------
+
+        CONTAINER-COLUMN
+
+----------------------------------*/
+
+/*----------------------------------
+            COLUMNS
+----------------------------------*/
+.container-first
+{
+    padding-top: 120px;
+}
+.container-first h1
+{
+    font-size: 40px;
+}
+input[type="radio"]
+{
+    width: 25px;
+}
+.radio input:checked
+{
+    accent-color: white;
+    color: #0061ff;
+}
+.radio
+{
+    display: flex;
+    gap: 5px;
+    padding: 60px 0;
+}
+.annuale
+{
+    margin-left: 30px;
+}
+.container-columns
+{
+    display: flex;
+    gap: 50px;
+}
+.title-column, .title-row
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.price
+{
+    margin-top: -10px;
+    margin-bottom: -15px;
+}
+.container-columns > div
+{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: calc(100% / 3);
+}
+.lower-column hr
+{
+    margin-right: 180px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+.upper-column, .lower-column
+{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 25px;
+}
+.upper-column > h1, .lower-column > h1
+{
+    font-size: 26px;
+}
+/*----------------------------------
+            LAST-ROW
+----------------------------------*/
+.last-row
+{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+}
+.row
+{
+    display: flex;
+    justify-content: center;
+}
+/*----------------------------------
+            LEFT-ROW
+----------------------------------*/
+.left-row
+{
+    width: 70%;
+    padding: 30px;
+}
+.left-row p
+{
+    font-size: 14px;
+    margin-top: 50px;
+}
+.left-row h3
+{
+    margin-top: 15px;
+}
+/*----------------------------------
+            RIGHT-ROW
+----------------------------------*/
+.right-row
+{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 30%;
+    padding: 30px;
 }
