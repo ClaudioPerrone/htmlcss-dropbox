@@ -512,7 +512,6 @@ input[type="radio"]
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: ;
 }
 .sixth h1
 {
@@ -521,4 +520,25 @@ input[type="radio"]
 .sixth button
 {
     border-style: none;
+}
+/*----------------------------------
+
+        CONTAINER-SEVEN
+
+----------------------------------*/
+.container-seventh
+{
+    padding: 120px 0;
+}
+.container-seventh h1
+{
+    padding-bottom: 40px;
+}
+.scelta
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px 0;
+    margin: 10px 0;
 }
