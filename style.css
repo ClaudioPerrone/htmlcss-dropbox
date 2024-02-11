@@ -123,8 +123,6 @@ li
     margin: 20px 0;
     font-size: 14px;
 }
-
-
 /*----------------------------------
 
             HEADER
@@ -440,10 +438,6 @@ input[type="radio"]
     width: 50%;
     height: 50%;
 }
-.left-one
-{
-    fill: white;
-}
 .space-one
 {
     top: 0;
@@ -463,6 +457,10 @@ input[type="radio"]
 {
     bottom: 0;
     right: 0;
+}
+[class^="space-"] img
+{
+    filter: invert(1);
 }
 .left-fifth .space-one
 {
