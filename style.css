@@ -502,21 +502,17 @@ input[type="radio"]
         CONTAINER-SIXTH
 
 ----------------------------------*/
-
 .container-sixth
 {
     background-color: #b4d0e7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 120px;
 }
 .sixth
 {
-    width: 52%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 140px 0;
+    width: ;
 }
 .sixth h1
 {
