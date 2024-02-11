@@ -18,6 +18,19 @@ body
     background-color: white;
 }
 /*----------------------------------
+            CONTAINERS
+----------------------------------*/
+.big-container
+{
+    max-width: 1200px;
+    margin: auto;
+}
+.small-container
+{
+    max-width: 1000px;
+    margin: auto;
+}
+/*----------------------------------
             FONTAWESOME
 ----------------------------------*/
 [class^="fa-solid fa-"]
@@ -36,22 +49,9 @@ h3
     font-size: 14px;
 }
 /*----------------------------------
-            CONTAINERS
-----------------------------------*/
-.big-container
-{
-    max-width: 1200px;
-    margin: auto;
-}
-.small-container
-{
-    max-width: 1000px;
-    margin: auto;
-}
-/*----------------------------------
             BUTTON
 ----------------------------------*/
-button:not([class="inizia"])
+button:not(.inizia):not(.partner)
 {
     padding: 13px 35px;
 }
@@ -64,14 +64,13 @@ button
     background-color: #0061ff;
     color: white;
     cursor: pointer;
-    padding: 5px 10px;
 }
 .button-white
 {
     background-color: white;
     color: black;
     cursor: pointer;
-    padding: 5px 10px;
+    border: 1px solid black;
 }
 /*----------------------------------
             IMAGES
@@ -142,7 +141,7 @@ header
 {
     display: flex;
 }
-.left-container , .right-container
+.left-header , .right-header
 {
     display: flex;
     justify-content: space-between;
@@ -151,7 +150,7 @@ header
     gap: 40px;
     margin: 0 15px;
 }
-.right-container button
+.right-header button
 {
     font-size: 18px;
     margin-left: -25px;
@@ -277,7 +276,9 @@ input[type="radio"]
     font-size: 26px;
 }
 /*----------------------------------
+
             LAST-ROW
+
 ----------------------------------*/
 .last-row
 {
@@ -316,4 +317,37 @@ input[type="radio"]
     align-items: end;
     width: 30%;
     padding: 30px;
+}
+/*----------------------------------
+
+        CONTAINER-SECOND
+
+----------------------------------*/
+.container-second
+{
+    display: flex;
+    margin-top: 150px;
+}
+.left-second
+{
+    max-width: 60%;
+}
+.right-second
+{
+    max-width: 40%;
+    padding: 50px 40px;
+}
+.right-second h2
+{
+    margin-bottom: 20px;
+}
+.right-second p
+{
+    font-size: 17px;
+}
+.right-second button
+{
+    margin-top: 30px;
+    font-size: 17px;
+    padding: 10px 20px;
 }
