@@ -55,6 +55,11 @@ button:not(.inizia):not(.partner)
 {
     padding: 13px 35px;
 }
+button a
+{
+    text-decoration: none;
+    color: black;
+}
 button
 {
     border-style: none;
@@ -118,6 +123,8 @@ li
     margin: 20px 0;
     font-size: 14px;
 }
+
+
 /*----------------------------------
 
             HEADER
@@ -392,7 +399,7 @@ input[type="radio"]
 ----------------------------------*/
 
 /*----------------------------------
-                LOGOS
+            LOGOS
 ----------------------------------*/
 .container-fifth
 {
@@ -489,4 +496,33 @@ input[type="radio"]
 .right-fifth .space-four
 {
     background-color: #ffd830;
+}
+/*----------------------------------
+
+        CONTAINER-SIXTH
+
+----------------------------------*/
+
+.container-sixth
+{
+    background-color: #b4d0e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sixth
+{
+    width: 52%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 140px 0;
+}
+.sixth h1
+{
+    color: #61082b;
+}
+.sixth button
+{
+    border-style: none;
 }
