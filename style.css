@@ -351,3 +351,28 @@ input[type="radio"]
     font-size: 17px;
     padding: 10px 20px;
 }
+/*----------------------------------
+
+        CONTAINER-THIRD
+
+----------------------------------*/
+.container-third
+{
+    margin-top: 120px;
+}
+.first-row, .second-row
+{
+    display: flex;
+}
+.first-row > div, .second-row > div
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 990px;
+    max-height: 800px;
+    padding: 0 20px;
+}
+.third-text p
+{
+    margin: 40px 0;
+}
