@@ -69,6 +69,13 @@ button
     background-color: #0061ff;
     color: white;
     cursor: pointer;
+    border: 1px solid transparent;
+}
+.button-blue:hover
+{
+    background-color: white;
+    color: #0061ff;
+    border: 1px solid #0061ff;
 }
 .button-white
 {
@@ -76,6 +83,12 @@ button
     color: black;
     cursor: pointer;
     border: 1px solid black;
+}
+.button-white:hover
+{
+    background-color: #0061ff;
+    color: white;
+    border: white;
 }
 /*----------------------------------
             IMAGES
@@ -159,6 +172,14 @@ header
     font-size: 18px;
     margin-left: -25px;
     padding: 5px 12px;
+}
+.button-header:hover
+{
+    background-color: #0061ff;
+    color: white;
+    padding: 6px 10px;
+    margin: -6px -10px;
+    cursor: pointer;
 }
 /*----------------------------------
 
@@ -404,6 +425,11 @@ header
     font-size: 12.5px;
     overflow-y: auto;
 }
+.middle-fifth:hover
+{
+    border: 10px solid white;
+}
+
 .middle-fifth p
 {
     padding: 20px 0;
@@ -458,38 +484,85 @@ header
 {
     filter: invert(1);
 }
+
+
 .left-fifth .space-one
 {
     background-color: #a2d39b;
+}
+.left-fifth .space-one:hover
+{
     border: 10px solid #d1e9cd;
 }
+
+
 .left-fifth .space-two
 {
     background-color: #61082b;
 }
+.left-fifth .space-two:hover
+{
+    border: 10px solid #a3325f;
+}
+
+
 .left-fifth .space-three
 {
     background-color: #0093ce;
 }
+.left-fifth .space-three:hover
+{
+    border: 10px solid #27b6ef;
+}
+
+
 .left-fifth .space-four
 {
     background-color: #ff1c1c;
 }
+.left-fifth .space-four:hover
+{
+    border: 10px solid #fd6464;
+}
+
+
 .right-fifth .space-one
 {
     background-color: #d5001f;
 }
+.right-fifth .space-one:hover
+{
+    border: 10px solid #ff3e5b;
+}
+
+
 .right-fifth .space-two
 {
     background-color: #b4d0e7;
 }
+.right-fifth .space-two:hover
+{
+    border: 10px solid #e4f3ff;
+}
+
+
 .right-fifth .space-three
 {
     background-color: #0d2481;
 }
+.right-fifth .space-three:hover
+{
+    border: 10px solid #2943ae;
+}
+
+
 .right-fifth .space-four
 {
     background-color: #ffd830;
+}
+.right-fifth .space-four:hover
+{
+    border: 10px solid #ffe882;
 }
 /*----------------------------------
 
@@ -573,4 +646,9 @@ footer
 .language i
 {
     padding-right: 10px;
+}
+li a
+{
+    text-decoration: none;
+    color: white;
 }
